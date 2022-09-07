@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow-x: hidden;
+      }
+
+      #app {
+        height: 100vh;
+        padding: 1em;
+        background-color: rgba(0, 0, 0, 0.87);
+        color: #fff;
+      }
+      
+      .ocean {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sponge-bob {
+        position: relative;
+        height: 12em;
+        width: 10em;
+        background-color: yellow;
+      }
+
+      .eye-lash {
+        position: absolute;
+        height: 0.8em;
+        width: 0.25em;
+        background-color: black;
+      }
+
+      .eye-lash.left.angle-left {
+        top: 1.6em;
+        left: 1.5em;
+        transform: rotate(-30deg);
+      }
+
+      .eye-lash.left {
+        top: 1.2em;
+        left: 2.6em;
+      }
+
+      .eye-lash.left.angle-right {
+        top: 1.6em;
+        left: 3.6em;
+        transform: rotate(30deg);
+      }
+
+      .eye-lash.right.angle-left {
+        top: 1.6em;
+        left: 6.2em;
+        transform: rotate(-30deg);
+      }
+
+      .eye-lash.right {
+        top: 1.2em;
+        left: 7.2em;
+      }
+
+      .eye-lash.right.angle-right {
+        top: 1.6em;
+        left: 8em;
+        transform: rotate(30deg);
+      }
+
+      .eye {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5em;
+        width: 2.5em;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .eye.left {
+        top: 2em;
+        left: 1.5em;
+      }
+
+      .eye.right {
+        top: 2em;
+        right: 1.5em;
+      }
+
+      .iris {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1.5em;
+        width: 1.5em;
+        background-color: lightblue;
+        border-radius: 50%;
+      }
+
+      .pupil {
+        height: 0.6em;
+        width: 0.6em;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      .nose {
+        position: absolute;
+        height: 0.6em;
+        width: 6em;
+        border: 3px solid darkgoldenrod;
+        border-radius: 50%;
+        top: 5em;
+        left: 1em;
+      }
+
+      .nose-hide {
+        position: absolute;
+        height: 1.5em;
+        width: 3.5em;
+        background-color: yellow;
+        top: 5em;
+        left: 1em;
+      }
+
+      .mouth {
+        position: absolute;
+        height: 2px;
+        width: 6em;
+        background-color: darkgoldenrod;
+        top: 8.5em;
+        left: 2em;
+      }
+
+      .teeth {
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        height: 1.5em;
+        width: 2em;
+        gap: 5px;
+        padding: 0 3px 3px 3px;
+        background-color: black;
+        top: 8.5em;
+        left: 4em;
+      }
+
+      .tooth {
+        height: 1.3em;
+        width: 100%;
+        background-color: white;
+      }
+
+      .pants {
+        position: relative;
+        height: 3.5em;
+        width: 10em;
+        background-color: brown;
+      }
+
+      .shirt {
+        height: 1.1em;
+        width: 10em;
+        background-color: white;
+        border-bottom: 3px dashed black;
+      }
+
+      .tie {
+        position: absolute;
+        height: 3em;
+        width: 1em;
+        background-color: red;
+        top: 0;
+        left: 4.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="ocean">
+        <div class="sponge-bob">
+          <div class="eye-lash left angle-left"></div>
+          <div class="eye-lash left"></div>
+          <div class="eye-lash left angle-right"></div>
+          <div class="eye left">
+            <div class="iris">
+              <div class="pupil"></div>
+            </div>
+          </div>
+          <div class="eye-lash right angle-left"></div>
+          <div class="eye-lash right"></div>
+          <div class="eye-lash right angle-right"></div>
+          <div class="eye right">
+            <div class="iris">
+              <div class="pupil"></div>
+            </div>
+          </div>
+          <div class="nose"></div>
+          <div class="nose-hide"></div>
+          <div class="mouth"></div>
+          <div class="teeth">
+            <div class="tooth"></div>
+            <div class="tooth"></div>
+          </div>
+        </div>
+        <div class="pants">
+          <div class="shirt"></div>
+          <div class="tie"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
